@@ -8,7 +8,7 @@ from email.mime.text import MIMEText
 from pyzabbix import ZabbixAPI
 
 # The hostname at which the Zabbix web interface is available
-ZABBIX_SERVER = 'http://192.168.128.181/zabbix/'
+ZABBIX_SERVER = 'http://zabbix_web_ip/zabbix/'
 zapi = ZabbixAPI(ZABBIX_SERVER)
 # Login to the Zabbix API
 zapi.login('zabbix_web_login_username', 'zabbix_web_login_passwd')

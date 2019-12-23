@@ -11,14 +11,14 @@ from pyzabbix import ZabbixAPI
 ZABBIX_SERVER = 'http://192.168.128.181/zabbix/'
 zapi = ZabbixAPI(ZABBIX_SERVER)
 # Login to the Zabbix API
-zapi.login('Admin', 'zabbix@ngcc')
+zapi.login('zabbix_web_login_username', 'zabbix_web_login_passwd')
 
 # mail information
-server = "192.168.131.208"
+server = "*.*.*.*"
 port = 25
-user = "zabbix@jiangsucallcenter.com.cn"
-password = "7C39Sn5VUM"
-sender = "zabbix@jiangsucallcenter.com.cn"
+user = "email_user"
+password = "email_passwd"
+sender = "email"
 receivers = ["2073665763@qq.com","18260067809@163.com"]
 
 def get_latest_data_by_itemid(itemid):
